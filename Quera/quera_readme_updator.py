@@ -148,7 +148,7 @@ all_possible_languages = [
     'C#',
     'Php 7',
     'Java 8',
-    'Java 17'
+    'Java 17',
     'Mono C#',
     'Node.js',
     'Perl',
@@ -156,8 +156,8 @@ all_possible_languages = [
     'Ruby',
     'Rust',
     'Obj-C',
-    'Typescript'
-    'Swift'
+    'Typescript',
+    'Swift',
     'Haskell',
     'F#',
 ]
