@@ -67,7 +67,6 @@ class QueraQuestion:
         self.quera_id: str = self.get_quera_id()
         self.tags: List[str] = self.get_tags()
         self.difficulty: str = self.get_difficulty()
-        self.solution_algorithm_method = self.get_solution_algorithm_method()
         self.is_solved: bool = self.get_is_solved()
 
     @classmethod
@@ -96,14 +95,6 @@ class QueraQuestion:
 
         return question_tags
 
-    def get_solution_algorithm_method(self) -> str:
-        """
-        ask the solution algorithm method from CLI
-        :returns empty string or user input
-        """
-        return input('\n\n please enter your solution algorithm method'
-                     '\n (Greedy, Recursive, Dynamic ... ) you can left it empty: ')
-
     @staticmethod
     def is_valid_quera_link(link: str):
         """ checks if the question link matches the question pattern or not """
@@ -116,9 +107,9 @@ class QueraQuestion:
     def get_difficulty(self):
         difficulties = ['Easy', 'Mid level', 'Hard']
         difficulty_i = int(input('\n\n enter your question difficulty number \n'
-                           '0: Easy\n'
-                           '1: Mid level\n'
-                           '2: Hard\n'))
+                                 '0: Easy\n'
+                                 '1: Mid level\n'
+                                 '2: Hard\n'))
 
         return difficulties[difficulty_i]
 
@@ -183,11 +174,11 @@ def fix_directory_of_solution_file(file_path: str, ques: QueraQuestion) -> str:
     current_name = path.basename(file_path)
     extension = path.splitext(current_name)[1]
 
-    new_file_path = rf'./{ques.difficulty}/{ques.quera_id}/{ques.quera_id}{extension}'
+    new_file_path = rf'./Quera/{ques.difficulty}/{ques.quera_id}/{ques.quera_id}{extension}'
     try:
         rename(file_path, new_file_path)
     except FileExistsError:
-        new_file_path = rf'./{ques.difficulty}/{ques.quera_id}/{ques.quera_id}_1{extension}'
+        new_file_path = rf'./Quera/{ques.difficulty}/{ques.quera_id}/{ques.quera_id}_1{extension}'
         rename(file_path, new_file_path)
     return new_file_path
 
@@ -199,7 +190,7 @@ def clean_path(file_path: str) -> str:
 
 def inject_info_in_readme(question: QueraQuestion, solution_file_path: str, language_of_solution: str):
     solved_status = 'Solved' if question.is_solved else 'notSolved'
-    readme_file_path = './Quera.md'
+    readme_file_path = './README.md'
 
     anchor_line = f'<!--#{question.difficulty} {solved_status}#-->\n'
 
@@ -219,14 +210,13 @@ def inject_info_in_readme(question: QueraQuestion, solution_file_path: str, lang
 def get_table_row_info_to_inject(question: QueraQuestion, solution_file_path: str, language_of_solution: str) -> str:
     name_field = f'[{question.name}]({question.link})'
     solution_file_field = f'[{language_of_solution}]({solution_file_path})'
-    algorithm_method_field = f'`{question.solution_algorithm_method}`' if question.solution_algorithm_method else '`--`'
     question_tags_field = question.get_tags_string_for_readme_file()
     quera_id = question.quera_id
     return (f'|{name_field}'
             f'|{solution_file_field}'
-            f'|{algorithm_method_field}'
             f'|{question_tags_field}'
             f'|{quera_id}|')
+
 
 if __name__ == '__main__':
 
