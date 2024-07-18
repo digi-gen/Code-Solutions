@@ -19,73 +19,43 @@
 
 
 
+***
 ## دسته بندی سوالات
 سوالات در سه سطح از لحاظ سختی دسته بندی شده اند
 
-* [easy](#easy)
-* [سخت](#hard-quera)
-* [سوال های حل نشده](#hammer-سوال-های-حل-نشده)
+* [ساده](#سوالات-ساده)
+* [متوسط](#سوالات-متوسط)
+* [سخت](#سوالات-سخت)
+
+  
 ***
 
-## easy
+## سوالات ساده
 
 ردیف | شناسه عددی | نام سوال | درجه سختی | نمره راه حل | توضیحات حل سوال
  :-: | :-: | :-: | :-: | :-: | :-:
 1 | 279 | [محاسبه‌ی پیچیده](https://quera.org/problemset/279) | ساده | [۱۰۰](Codes/easy/279/279_1.py) | |
-2 | 280 | [اعداد فیثاغورثی](https://quera.org/problemset/280) | متوسط | [۱۰۰](Codes/mid/280/280_1.py) | |
-3 | 282 | [کامل بودن یا نبودن](https://quera.org/problemset/282) | ساده | [۱۰۰](Codes/easy/282/282_1.py) | |
-4 | 283 | [مربع توخالی](https://quera.org/problemset/283) | ساده | [۱۰۰](Codes/easy/283/283_1.py) | |
-1 | 279 | [محاسبه‌ی پیچیده](https://quera.org/problemset/279) | ساده | [۱۰۰](Codes/easy/279/279_1.py) | |
-2 | 280 | [اعداد فیثاغورثی](https://quera.org/problemset/280) | متوسط | [۱۰۰](Codes/mid/280/280_1.py) | |
-3 | 282 | [کامل بودن یا نبودن](https://quera.org/problemset/282) | ساده | [۱۰۰](Codes/easy/282/282_1.py) | |
-4 | 283 | [مربع توخالی](https://quera.org/problemset/283) | ساده | [۱۰۰](Codes/easy/283/283_1.py) | |
-1 | 279 | [محاسبه‌ی پیچیده](https://quera.org/problemset/279) | ساده | [۱۰۰](Codes/easy/279/279_1.py) | |
-2 | 280 | [اعداد فیثاغورثی](https://quera.org/problemset/280) | متوسط | [۱۰۰](Codes/mid/280/280_1.py) | |
-3 | 282 | [کامل بودن یا نبودن](https://quera.org/problemset/282) | ساده | [۱۰۰](Codes/easy/282/282_1.py) | |
-4 | 283 | [مربع توخالی](https://quera.org/problemset/283) | ساده | [۱۰۰](Codes/easy/283/283_1.py) | |
-1 | 279 | [محاسبه‌ی پیچیده](https://quera.org/problemset/279) | ساده | [۱۰۰](Codes/easy/279/279_1.py) | |
-2 | 280 | [اعداد فیثاغورثی](https://quera.org/problemset/280) | متوسط | [۱۰۰](Codes/mid/280/280_1.py) | |
-3 | 282 | [کامل بودن یا نبودن](https://quera.org/problemset/282) | ساده | [۱۰۰](Codes/easy/282/282_1.py) | |
-4 | 283 | [مربع توخالی](https://quera.org/problemset/283) | ساده | [۱۰۰](Codes/easy/283/283_1.py) | |
-1 | 279 | [محاسبه‌ی پیچیده](https://quera.org/problemset/279) | ساده | [۱۰۰](Codes/easy/279/279_1.py) | |
-2 | 280 | [اعداد فیثاغورثی](https://quera.org/problemset/280) | متوسط | [۱۰۰](Codes/mid/280/280_1.py) | |
-3 | 282 | [کامل بودن یا نبودن](https://quera.org/problemset/282) | ساده | [۱۰۰](Codes/easy/282/282_1.py) | |
-4 | 283 | [مربع توخالی](https://quera.org/problemset/283) | ساده | [۱۰۰](Codes/easy/283/283_1.py) | |
-1 | 279 | [محاسبه‌ی پیچیده](https://quera.org/problemset/279) | ساده | [۱۰۰](Codes/easy/279/279_1.py) | |
-2 | 280 | [اعداد فیثاغورثی](https://quera.org/problemset/280) | متوسط | [۱۰۰](Codes/mid/280/280_1.py) | |
-3 | 282 | [کامل بودن یا نبودن](https://quera.org/problemset/282) | ساده | [۱۰۰](Codes/easy/282/282_1.py) | |
-4 | 283 | [مربع توخالی](https://quera.org/problemset/283) | ساده | [۱۰۰](Codes/easy/283/283_1.py) | |
-1 | 279 | [محاسبه‌ی پیچیده](https://quera.org/problemset/279) | ساده | [۱۰۰](Codes/easy/279/279_1.py) | |
-2 | 280 | [اعداد فیثاغورثی](https://quera.org/problemset/280) | متوسط | [۱۰۰](Codes/mid/280/280_1.py) | |
-3 | 282 | [کامل بودن یا نبودن](https://quera.org/problemset/282) | ساده | [۱۰۰](Codes/easy/282/282_1.py) | |
-4 | 283 | [مربع توخالی](https://quera.org/problemset/283) | ساده | [۱۰۰](Codes/easy/283/283_1.py) | |
-1 | 279 | [محاسبه‌ی پیچیده](https://quera.org/problemset/279) | ساده | [۱۰۰](Codes/easy/279/279_1.py) | |
-2 | 280 | [اعداد فیثاغورثی](https://quera.org/problemset/280) | متوسط | [۱۰۰](Codes/mid/280/280_1.py) | |
-3 | 282 | [کامل بودن یا نبودن](https://quera.org/problemset/282) | ساده | [۱۰۰](Codes/easy/282/282_1.py) | |
-4 | 283 | [مربع توخالی](https://quera.org/problemset/283) | ساده | [۱۰۰](Codes/easy/283/283_1.py) | |
 
+
+[بازگشت به ابتدا :back:](#حل-سوالات-Quera)
 ***
 
-## mid
+## سوالات متوسط
 
 ردیف | شناسه عددی | نام سوال | درجه سختی | نمره راه حل | توضیحات حل سوال
  :-: | :-: | :-: | :-: | :-: | :-:
 1 | 279 | [محاسبه‌ی پیچیده](https://quera.org/problemset/279) | ساده | [۱۰۰](Codes/easy/279/279_1.py) | |
-2 | 280 | [اعداد فیثاغورثی](https://quera.org/problemset/280) | متوسط | [۱۰۰](Codes/mid/280/280_1.py) | |
-3 | 282 | [کامل بودن یا نبودن](https://quera.org/problemset/282) | ساده | [۱۰۰](Codes/easy/282/282_1.py) | |
-4 | 283 | [مربع توخالی](https://quera.org/problemset/283) | ساده | [۱۰۰](Codes/easy/283/283_1.py) | |
 
+[بازگشت به ابتدا :back:](#حل-سوالات-Quera)
 ***
 
-# hard quera
+## سوالات سخت
 
 ردیف | شناسه عددی | نام سوال | درجه سختی | نمره راه حل | توضیحات حل سوال
  :-: | :-: | :-: | :-: | :-: | :-:
 1 | 279 | [محاسبه‌ی پیچیده](https://quera.org/problemset/279) | ساده | [۱۰۰](Codes/easy/279/279_1.py) | |
-2 | 2568 | [اعداد فیثاغورثی](https://quera.org/problemset/280) | متوسط | [۱۰۰](Codes/mid/280/280_1.py) | |
-3 | 282 | [کامل بودن یا نبودن](https://quera.org/problemset/282) | ساده | [۱۰۰](Codes/easy/282/282_1.py) | |
-4 | 283 | [مربع توخالی](https://quera.org/problemset/283) | ساده | [۱۰۰](Codes/easy/283/283_1.py) | |
 
+[بازگشت به ابتدا :back:](#حل-سوالات-Quera)
 ***
 
 </div>
