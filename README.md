@@ -71,8 +71,8 @@ through CLI to applying information of your solution and question in readme file
 
 |                         Question                         |               Solution File                | Question Tags | Quera id |
 |:--------------------------------------------------------:|:------------------------------------------:|:-------------:|:--------:|
-| [اطلاعات کوه‌نوردی](https://quera.org/problemset/211018) | [Python 3.8](./Quera/Mid level/211018/211018.py) |   `Greedy`    |  211018  |
-<!--#Mid level Solved#-->
+| [اطلاعات کوه‌نوردی](https://quera.org/problemset/211018) | [Python 3.8](Quera/Mid-level/211018/211018.py) |   `Greedy`    |  211018  |
+<!--#Mid-level Solved#-->
 <!-- ******** Warning *********
 -    never modify the above comment line 
 -   and don't add any line or anything else after or before it 
@@ -122,8 +122,8 @@ through CLI to applying information of your solution and question in readme file
 
 |                       Question                       |               Solution File                | Question Tags | Quera id |
 |:----------------------------------------------------:|:------------------------------------------:|:-------------:|:--------:|
-| [تبدیل به درخت](https://quera.org/problemset/221455) | [Python 3.8](./Quera/Mid level/221455/221455.py) |    `Graph`    |  221455  |
-<!--#Mid level notSolved#-->
+|[تبدیل به درخت](https://quera.org/problemset/221455)|[Python 3.8](./Quera/Mid-level/221455/221455.py)|`Graph`|221455|
+<!--#Mid-level notSolved#-->
 <!-- ******** Warning *********
 -    never modify the above comment line 
 -   and don't add any line or anything else after or before it 
