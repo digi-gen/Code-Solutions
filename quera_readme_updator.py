@@ -105,10 +105,10 @@ class QueraQuestion:
                      ' (please copy the name from question page and enter it here:')
 
     def get_difficulty(self):
-        difficulties = ['Easy', 'Mid level', 'Hard']
+        difficulties = ['Easy', 'Mid-level', 'Hard']
         difficulty_i = int(input('\n\n enter your question difficulty number \n'
                                  '0: Easy\n'
-                                 '1: Mid level\n'
+                                 '1: Mid-level\n'
                                  '2: Hard\n'))
 
         return difficulties[difficulty_i]
