@@ -56,6 +56,7 @@ through CLI to applying information of your solution and question in readme file
 |  [The Bro Code](https://quera.org/problemset/171788)   | [Python 3.8](./Quera/Easy/171788/171788.py) |          `Implementation`          |  171788  |
 | [روبه‌رو در مترو](https://quera.org/problemset/218361) | [Python 3.8](./Quera/Easy/218361/218361.py) |          `Implementation`          |  218361  |
 |   [شهرهای مرزی](https://quera.org/problemset/228669)   | [Python 3.8](./Quera/Easy/228669/228669.py) |           `Mathematics`            |  228669  |
+|[خمیدگی مار](https://quera.org/problemset/226378)|[Python 3.8](./Quera/Easy/226378/226378.py)|`Implementation`|226378|
 <!--#Easy Solved#-->
 <!-- ******** Warning *********
 -    never modify the above comment line 
