@@ -62,7 +62,7 @@ def insert_code(info, script):
         tags += f'`{i}` '
         
     # text = 'count, id, name(link to question), score(link to answer), tags'
-    text = f'-1 | {info[3]} | [{info[0]}](https://quera.org/problemset/{info[3]}) | [{info[2]}](./Quera/{a[info[1]]}/{info[3]}/{info[3]}) | {tags}|\n'
+    text = f'-1 | {info[3]} | [{info[0]}](https://quera.org/problemset/{info[3]}) | [{info[2]}](./Quera/{a[info[1]]}/{info[3]}/) | {tags}|\n'
     
     update_csv(text, info[1])
 
