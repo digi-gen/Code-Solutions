@@ -3,7 +3,7 @@ from selenium import webdriver
 import os
 import time
 
-def scrap_web(url, username, passeord):
+def scrap_web(url):
     
     correct_tags = ['Python', 'برنامه‌نویسی پیشرفته', 'پایگاه داده', 'دانش‌آموزی', 
                     'طراحی الگوریتم', 'مبانی برنامه‌نویسی', 'هوش مصنوعی و سیستم‌های خبره', 'یادگیری ماشین',
@@ -18,20 +18,17 @@ def scrap_web(url, username, passeord):
     guestion_difficulty = browser.find_element(By.XPATH,".//div[@id='__next']//span[contains(@class, 'chakra-badge css-')]").text
     
     time.sleep(1)
-    browser.find_element(By.XPATH,".//div[@id='__next']//button[@class='chakra-tabs__tab css-3wuodn'][2]").click()
-    guestion_score = browser.find_element(By.XPATH,".//div[@id='__next']//main//tr[@class='css-0'][1]//td[4]//span").text
-    all_tags = browser.find_elements(By.XPATH,".//div[@id='__next']//div[@class='chakra-stack css-1ainr4z']//span[@dir='rtl' and @class='chakra-text css-zvlevn']")
     
+    all_tags = browser.find_elements(By.XPATH,".//div[@id='__next']//div[@class='chakra-stack css-1ainr4z']//span[@dir='rtl' and @class='chakra-text css-zvlevn']")
     question_id = url.split('/')
     question_id = question_id[len(question_id)-1]
-    
     
     tags = []
     for i in range(len(all_tags)):
         if all_tags[i].text in correct_tags:
             tags.append(all_tags[i].text)
     
-    return [guestion_name, guestion_difficulty, guestion_score, question_id, tags]
+    return [guestion_name, guestion_difficulty, 0, question_id, tags]
 
 
 
@@ -62,7 +59,7 @@ def insert_code(info, script):
         tags += f'`{i}` '
         
     # text = 'count, id, name(link to question), score(link to answer), tags'
-    text = f'-1 | {info[3]} | [{info[0]}](https://quera.org/problemset/{info[3]}) | [{info[2]}](./Quera/{a[info[1]]}/{info[3]}/) | {tags}|\n'
+    text = f'-1 | {info[3]} | [{info[0]}](https://quera.org/problemset/{info[3]}) | [جواب](./Quera/{a[info[1]]}/{info[3]}/) | {tags}|\n'
     
     update_csv(text, info[1])
 
@@ -150,21 +147,9 @@ if __name__ == '__main__':
     
     path_to_answer = input('Please enter path to your directory that all of your complete codes is there: ')
     
-    user_name = input("Please enter your Quera user name: ")
-    password = input("Please enter your Quera password: ")
-    
     browser = webdriver.Chrome()
-    browser.get('https://quera.org/accounts/login')  
-    temp = browser.find_element(By.NAME,'login')
-    temp.send_keys(user_name)
-    temp = browser.find_element(By.NAME,'password')
-    temp.send_keys(password)
-    browser.find_element(By.XPATH,".//button[@class='ui fluid large primary submit button']").click()
-    
-
 
     files_in_folder = os.listdir(path_to_answer)
-        
     for i in files_in_folder:
         read_in_files = []
         
@@ -172,24 +157,23 @@ if __name__ == '__main__':
             with open(f'./update codes with selenium/{j}', 'r', encoding='utf-8') as f:
                 read = f.readlines()
                 try:
-                    read_in_files.append([(i.split(' | ')[1]+'.py') for i in read][0])
+                    temp = [(i.split(' | ')[1]+'.py') for i in read]
+                    read_in_files += temp
                 except:
                     pass
-
-        with open(path_to_answer+'/'+i, 'r', encoding='utf-8') as f:
-            script = f.readlines()
-            
-        url = 'https://quera.org/problemset/'+i[:len(i)-3]
-        info = scrap_web(url, user_name, password)
-            
-        if script[0] != '# '+url+'\n':
-            script.insert(0, f"# {url}\n")
                 
-        insert_code(info, script)
+        if i not in [j for j in read_in_files]:
+            with open(path_to_answer+'/'+i, 'r', encoding='utf-8') as f:
+                script = f.readlines()
+                
+            url = 'https://quera.org/problemset/'+i[:len(i)-3]
+            info = scrap_web(url)
+                
+            if script[0] != '# '+url+'\n':
+                script.insert(0, f"# {url}\n")
+                    
+            insert_code(info, script)
             
-        
-        
-    
     update_table()
     
     
