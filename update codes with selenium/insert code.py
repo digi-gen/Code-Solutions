@@ -127,15 +127,15 @@ def update_table():
     
     easy = text[3].split('1 |')
     easy[1] = read_in_file[0]
-    text[3] = easy[0]+easy[1]+'\n[بازگشت به ابتدا :back:](#حل-سوالات-Quera)'
+    text[3] = easy[0]+easy[1]+'\n[بازگشت به ابتدا :back:](#حل-سوالات-Quera)\n'
     
     mid = text[4].split('1 |')
     mid[1] = read_in_file[1]
-    text[4] = mid[0]+mid[1]+'\n[بازگشت به ابتدا :back:](#حل-سوالات-Quera)'
+    text[4] = mid[0]+mid[1]+'\n[بازگشت به ابتدا :back:](#حل-سوالات-Quera)\n'
     
     hard = text[5].split('1 |')
     hard[1] = read_in_file[2]
-    text[5] = hard[0]+hard[1]+'\n[بازگشت به ابتدا :back:](#حل-سوالات-Quera)'
+    text[5] = hard[0]+hard[1]+'\n[بازگشت به ابتدا :back:](#حل-سوالات-Quera)\n'
     
     text = '***\n'.join(text)
     
