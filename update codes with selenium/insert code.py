@@ -150,11 +150,8 @@ if __name__ == '__main__':
     
     path_to_answer = input('Please enter path to your directory that all of your complete codes is there: ')
     
-    user_name = 'mr.manmahmood@gmail.com'
-    password = 'feS2U4X4iQxLSSQ'
-    
-    #user_name = input("Please enter your Quera user name: ")
-    #password = input("Please enter your Quera password: ")
+    user_name = input("Please enter your Quera user name: ")
+    password = input("Please enter your Quera password: ")
     
     browser = webdriver.Chrome()
     browser.get('https://quera.org/accounts/login')  
