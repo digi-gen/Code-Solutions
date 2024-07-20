@@ -163,8 +163,6 @@ if __name__ == '__main__':
         pass
     
     path_to_answer = input('Please enter path to your directory that all of your complete codes is there: ')
-    
-    browser = webdriver.Chrome()
 
     files_in_folder = os.listdir(path_to_answer)
     for i in files_in_folder:
@@ -179,17 +177,16 @@ if __name__ == '__main__':
                 except:
                     pass
                 
-        if i not in [j for j in read_in_files]:
-            with open(path_to_answer+'/'+i, 'r', encoding='utf-8') as f:
-                script = f.readlines()
+        with open(path_to_answer+'/'+i, 'r', encoding='utf-8') as f:
+            script = f.readlines()
+            
+        url = 'https://quera.org/problemset/'+i[:len(i)-3]
+        info = scrap_web(url)
+            
+        if script[0] != '# '+url+'\n':
+            script.insert(0, f"# {url}\n")
                 
-            url = 'https://quera.org/problemset/'+i[:len(i)-3]
-            info = scrap_web(url)
-                
-            if script[0] != '# '+url+'\n':
-                script.insert(0, f"# {url}\n")
-                    
-            insert_code(info, script, path)
+        insert_code(info, script, path)
             
     update_table(path)
     
