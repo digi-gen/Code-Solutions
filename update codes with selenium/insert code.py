@@ -32,7 +32,7 @@ def scrap_web(url):
 
 
 
-def insert_code(info, script):
+def insert_code(info, script, path):
     
     a = {'ساده':'Easy', 'متوسط':'Mid-level', 'سخت':'Hard',}
     
@@ -61,23 +61,23 @@ def insert_code(info, script):
     # text = 'count, id, name(link to question), score(link to answer), tags'
     text = f'-1 | {info[3]} | [{info[0]}](https://quera.org/problemset/{info[3]}) | [جواب](./Quera/{a[info[1]]}/{info[3]}/) | {tags}|\n'
     
-    update_csv(text, info[1])
+    update_csv(text, info[1], path)
 
 
 
-def update_csv(text, diff):
+def update_csv(text, diff, path):
     info = text.split(' | ')
     
     if diff == 'ساده':
-        with open('./update codes with selenium/simple.txt', 'r', encoding='utf-8') as f:
+        with open(f'{path}/update codes with selenium/simple.txt', 'r', encoding='utf-8') as f:
             read_in_file = f.readlines()
             
     elif diff == 'متوسط':
-        with open('./update codes with selenium/mid.txt', 'r', encoding='utf-8') as f:
+        with open(f'{path}/update codes with selenium/mid.txt', 'r', encoding='utf-8') as f:
             read_in_file = f.readlines()
             
     elif diff == 'سخت':
-        with open('./update codes with selenium/hard.txt', 'r', encoding='utf-8') as f:
+        with open(f'{path}/update codes with selenium/hard.txt', 'r', encoding='utf-8') as f:
             read_in_file = f.readlines()
             
             
@@ -87,33 +87,34 @@ def update_csv(text, diff):
     
     
     for i in range(1, len(read_in_file)+1):
-        read_in_file[i-1][0] = str(i)
+        read_in_file[i-1][0] = '| ' + str(i)
     
     
     read_in_file = [' | '.join(i) for i in read_in_file]
     
     if diff == 'ساده':
-        with open('./update codes with selenium/simple.txt', 'w', encoding='utf-8') as f:
+        with open(f'{path}/update codes with selenium//simple.txt', 'w', encoding='utf-8') as f:
             for item in read_in_file:
                 f.write(item)
             
     elif diff == 'متوسط':
-        with open('./update codes with selenium/mid.txt', 'w', encoding='utf-8') as f:
+        with open(f'{path}/update codes with selenium/mid.txt', 'w', encoding='utf-8') as f:
             for item in read_in_file:
                 f.write(item)
             
     elif diff == 'سخت':
-        with open('./update codes with selenium/hard.txt', 'w', encoding='utf-8') as f:
+        with open(f'{path}/update codes with selenium/hard.txt', 'w', encoding='utf-8') as f:
             for item in read_in_file:
                 f.write(item)
         
 
 
-def update_table():
+def update_table(path):
     
     read_in_file = []
+    
     for i in ['simple.txt', 'mid.txt', 'hard.txt']:
-        with open(f'./update codes with selenium/{i}', 'r', encoding='utf-8') as f:
+        with open(f'{path}/update codes with selenium/{i}', 'r', encoding='utf-8') as f:
             read_in_file.append(f.read())
 
     with open('./README.md', 'r', encoding='utf-8') as f:
@@ -122,15 +123,15 @@ def update_table():
         
     
     
-    easy = text[3].split('1 |')
+    easy = text[3].split('| 1 |')
     easy[1] = read_in_file[0]
     text[3] = easy[0]+easy[1]+'\n[بازگشت به ابتدا :back:](#حل-سوالات-Quera)\n'
     
-    mid = text[4].split('1 |')
+    mid = text[4].split('| 1 |')
     mid[1] = read_in_file[1]
     text[4] = mid[0]+mid[1]+'\n[بازگشت به ابتدا :back:](#حل-سوالات-Quera)\n'
     
-    hard = text[5].split('1 |')
+    hard = text[5].split('| 1 |')
     hard[1] = read_in_file[2]
     text[5] = hard[0]+hard[1]+'\n[بازگشت به ابتدا :back:](#حل-سوالات-Quera)\n'
     
@@ -145,6 +146,7 @@ def update_table():
 if __name__ == '__main__':
     
     
+    path = os.getcwd()
     path_to_answer = input('Please enter path to your directory that all of your complete codes is there: ')
     
     browser = webdriver.Chrome()
@@ -154,7 +156,7 @@ if __name__ == '__main__':
         read_in_files = []
         
         for j in ['simple.txt', 'mid.txt', 'hard.txt']:
-            with open(f'./update codes with selenium/{j}', 'r', encoding='utf-8') as f:
+            with open(f'{path}/update codes with selenium/{j}', 'r', encoding='utf-8') as f:
                 read = f.readlines()
                 try:
                     temp = [(i.split(' | ')[1]+'.py') for i in read]
@@ -172,9 +174,9 @@ if __name__ == '__main__':
             if script[0] != '# '+url+'\n':
                 script.insert(0, f"# {url}\n")
                     
-            insert_code(info, script)
+            insert_code(info, script, path)
             
-    update_table()
+    update_table(path)
     
     
     
