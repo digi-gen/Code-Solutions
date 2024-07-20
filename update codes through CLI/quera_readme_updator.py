@@ -4,6 +4,7 @@
 
     Warning! don't modify this file without complete knowledge about its implementation
 """
+import re
 from re import compile, match
 
 from typing import List

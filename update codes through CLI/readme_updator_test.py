@@ -1,5 +1,5 @@
 import unittest
-from readme_updator import *
+from quera_readme_updator import *
 
 
 test_link = 'https://quera.org/problemset/9024'
