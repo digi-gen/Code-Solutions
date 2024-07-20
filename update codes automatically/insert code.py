@@ -1,7 +1,6 @@
-from selenium.webdriver.common.by import By
-from selenium import webdriver
+import requests
+from bs4 import BeautifulSoup
 import os
-import time
 
 def scrap_web(url):
     
@@ -11,24 +10,30 @@ def scrap_web(url):
                     'جست‌وجو', 'حریصانه', 'داده ساختار', 'درخت', 'رشته‌ها', 'ریاضیات', 'گراف', 'معمایی', 'نظریه اعداد', 
                     'هندسه', 'مقدماتی' ]
 
-    browser.get(url)
+    # Start a session
+    session = requests.Session()
     
-    time.sleep(1)
-    guestion_name = browser.find_element(By.XPATH,".//div[@id='__next']//h1[@class='chakra-heading css-1o1jsbj']").text
-    guestion_difficulty = browser.find_element(By.XPATH,".//div[@id='__next']//span[contains(@class, 'chakra-badge css-')]").text
+    # Get the page content
+    response = session.get(url)
+    response.raise_for_status()  # Ensure we notice bad responses
     
-    time.sleep(1)
+    # Parse the HTML content
+    soup = BeautifulSoup(response.content, 'html.parser')
     
-    all_tags = browser.find_elements(By.XPATH,".//div[@id='__next']//div[@class='chakra-stack css-1ainr4z']//span[@dir='rtl' and @class='chakra-text css-zvlevn']")
-    question_id = url.split('/')
-    question_id = question_id[len(question_id)-1]
+    # Extract question name
+    question_name = soup.select_one("div#__next h1.chakra-heading.css-1o1jsbj").text
     
-    tags = []
-    for i in range(len(all_tags)):
-        if all_tags[i].text in correct_tags:
-            tags.append(all_tags[i].text)
+    # Extract question difficulty
+    question_difficulty = soup.select_one("div#__next span[class*='chakra-badge css-']").text
     
-    return [guestion_name, guestion_difficulty, 0, question_id, tags]
+    # Extract question id
+    question_id = url.split('/')[-1]
+    
+    # Extract all tags
+    all_tags_elements = soup.select("div#__next div.chakra-stack.css-1ainr4z span[dir='rtl'].chakra-text.css-zvlevn")
+    tags = [tag.text for tag in all_tags_elements if tag.text in correct_tags]
+    
+    return [question_name, question_difficulty, 0, question_id, tags]
 
 
 
@@ -69,15 +74,15 @@ def update_csv(text, diff, path):
     info = text.split(' | ')
     
     if diff == 'ساده':
-        with open(f'{path}/update codes with selenium/simple.txt', 'r', encoding='utf-8') as f:
+        with open(f'{path}/update codes automatically/simple.txt', 'r', encoding='utf-8') as f:
             read_in_file = f.readlines()
             
     elif diff == 'متوسط':
-        with open(f'{path}/update codes with selenium/mid.txt', 'r', encoding='utf-8') as f:
+        with open(f'{path}/update codes automatically/mid.txt', 'r', encoding='utf-8') as f:
             read_in_file = f.readlines()
             
     elif diff == 'سخت':
-        with open(f'{path}/update codes with selenium/hard.txt', 'r', encoding='utf-8') as f:
+        with open(f'{path}/update codes automatically/hard.txt', 'r', encoding='utf-8') as f:
             read_in_file = f.readlines()
             
             
@@ -93,17 +98,17 @@ def update_csv(text, diff, path):
     read_in_file = [' | '.join(i) for i in read_in_file]
     
     if diff == 'ساده':
-        with open(f'{path}/update codes with selenium//simple.txt', 'w', encoding='utf-8') as f:
+        with open(f'{path}/update codes automatically//simple.txt', 'w', encoding='utf-8') as f:
             for item in read_in_file:
                 f.write(item)
             
     elif diff == 'متوسط':
-        with open(f'{path}/update codes with selenium/mid.txt', 'w', encoding='utf-8') as f:
+        with open(f'{path}/update codes automatically/mid.txt', 'w', encoding='utf-8') as f:
             for item in read_in_file:
                 f.write(item)
             
     elif diff == 'سخت':
-        with open(f'{path}/update codes with selenium/hard.txt', 'w', encoding='utf-8') as f:
+        with open(f'{path}/update codes automatically/hard.txt', 'w', encoding='utf-8') as f:
             for item in read_in_file:
                 f.write(item)
         
@@ -114,7 +119,7 @@ def update_table(path):
     read_in_file = []
     
     for i in ['simple.txt', 'mid.txt', 'hard.txt']:
-        with open(f'{path}/update codes with selenium/{i}', 'r', encoding='utf-8') as f:
+        with open(f'{path}/update codes automatically/{i}', 'r', encoding='utf-8') as f:
             read_in_file.append(f.read())
 
     with open('./README.md', 'r', encoding='utf-8') as f:
@@ -147,6 +152,12 @@ if __name__ == '__main__':
     
     
     path = os.getcwd()
+    
+    try:
+        path.replace('update codes automatically/', '')
+    except:
+        pass
+    
     path_to_answer = input('Please enter path to your directory that all of your complete codes is there: ')
     
     browser = webdriver.Chrome()
@@ -156,7 +167,7 @@ if __name__ == '__main__':
         read_in_files = []
         
         for j in ['simple.txt', 'mid.txt', 'hard.txt']:
-            with open(f'{path}/update codes with selenium/{j}', 'r', encoding='utf-8') as f:
+            with open(f'{path}/update codes automatically/{j}', 'r', encoding='utf-8') as f:
                 read = f.readlines()
                 try:
                     temp = [(i.split(' | ')[1]+'.py') for i in read]
