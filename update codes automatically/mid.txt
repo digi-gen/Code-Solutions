@@ -14,5 +14,6 @@
 | 14 | 52543 | [بازی](https://quera.org/problemset/52543) | [جواب](./Quera/Mid-level/52543/) | `پیاده‌سازی` |
 | 15 | 60134 | [شطرنج میوه‌ای](https://quera.org/problemset/60134) | [جواب](./Quera/Mid-level/60134/) | `Python` |
 | 16 | 87176 | [بازی تفاضل](https://quera.org/problemset/87176) | [جواب](./Quera/Mid-level/87176/) | `Python` |
-| 17 | 211018 | [اطلاعات کوه‌نوردی](https://quera.org/problemset/211018) | [جواب](./Quera/Mid-level/211018/) | `حریصانه` |
-| 18 | 221455 | [تبدیل به درخت](https://quera.org/problemset/221455) | [جواب](./Quera/Mid-level/221455/) | `گراف` |
+| 17 | 177662 | [شکلات فروشی](https://quera.org/problemset/177662) | [جواب](./Quera/Mid-level/177662/) | `برنامه‌نویسی پویا` |
+| 18 | 211018 | [اطلاعات کوه‌نوردی](https://quera.org/problemset/211018) | [جواب](./Quera/Mid-level/211018/) | `حریصانه` |
+| 19 | 221455 | [تبدیل به درخت](https://quera.org/problemset/221455) | [جواب](./Quera/Mid-level/221455/) | `گراف` |
