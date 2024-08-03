@@ -44,7 +44,7 @@ def scrap_web(url):
 def insert_code(info, script, path):
     global a
     
-    path_temp = os.path.join('.', 'Quera', a[info[1]], info[3])
+    path_temp = os.path.join('..', 'Quera', a[info[1]], info[3])
     if not os.path.exists(path_temp):
         os.makedirs(path_temp)
     
