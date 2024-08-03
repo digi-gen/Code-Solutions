@@ -67,7 +67,8 @@ def insert_code(info, script, path):
         tags += f'`{i}` '
         
     # text = 'count, id, name(link to question), score(link to answer), tags'
-    text = f'-1 | {info[3]} | [{info[0]}](https://quera.org/problemset/{info[3]}) | [جواب]({path_temp}\) | {tags}|\n'
+    path_temp = path_temp.replace('\\', '/')
+    text = f'''-1 | {info[3]} | [{info[0]}](https://quera.org/problemset/{info[3]}) | [جواب]({path_temp}/) | {tags}|\n'''
     
     update_csv(text, info[1], path)
 

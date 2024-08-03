@@ -83,7 +83,7 @@
 | 40 | 18310 | [Joos](https://quera.org/problemset/18310) | [جواب](./Quera/Easy/18310/) | `جست‌وجو` |
 | 41 | 44077 | [کاغذ کادو چهارضلعی](https://quera.org/problemset/44077) | [جواب](./Quera/Easy/44077/) | `ریاضیات` `هندسه` |
 | 42 | 49028 | [کلید چراغ](https://quera.org/problemset/49028) | [جواب](./Quera/Easy/49028/) | `پیاده‌سازی` |
-| 43 | 49029 | [دیوار مهربانی](https://quera.org/problemset/49029) | [جواب](.\Quera\Easy\49029\) | `ریاضیات` |
+| 43 | 49029 | [دیوار مهربانی](https://quera.org/problemset/49029) | [جواب](./Quera/Easy/49029/) | `ریاضیات` |
 | 44 | 51865 | [بهداشت و سلامت](https://quera.org/problemset/51865) | [جواب](./Quera/Easy/51865/) | `پیاده‌سازی` |
 | 45 | 51866 | [کاف‌کیک](https://quera.org/problemset/51866) | [جواب](./Quera/Easy/51866/) | `جست‌وجو` `حریصانه` |
 | 46 | 52542 | [کاکتوس‌های پردردسر](https://quera.org/problemset/52542) | [جواب](./Quera/Easy/52542/) | `پیاده‌سازی` |
