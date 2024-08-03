@@ -84,7 +84,11 @@ def update_csv(text, difficulty, path):
             
     
     read_in_file = [[j for j in i.split(' | ')] for i in read_in_file]
-    read_in_file.append(info)
+    
+    codes_number = [i[1] for i in read_in_file]
+    if info[1] not in codes_number:
+        read_in_file.append(info)
+        
     read_in_file.sort(key=lambda x:int(x[1]))
     
     
@@ -171,6 +175,8 @@ if __name__ == '__main__':
         insert_code(info, script, path)
             
     update_table(path)
+    
+    print('done!!')
     
     
     
