@@ -41,10 +41,11 @@ def scrap_web(url):
 
 
 
-def insert_code(info, script, path):
+def insert_code(info, script, path, languge):
     global a
     
-    path_temp = os.path.join('.', 'Quera', a[info[1]], info[3])
+    path_new = path.replace('update codes automatically', '')
+    path_temp = os.path.join(path_new, 'Quera', a[info[1]], info[3])
     if not os.path.exists(path_temp):
         os.makedirs(path_temp)
     
@@ -59,7 +60,7 @@ def insert_code(info, script, path):
                 return
         
     text = ''.join(script)
-    with open(os.path.join(path_temp, f'{info[3]}_{len(files_in_folder)+1}.py'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(path_temp, f'{info[3]}_{len(files_in_folder)+1}.{languge}'), 'w', encoding='utf-8') as f:
         f.write(text)
     
     tags = ''
@@ -153,27 +154,18 @@ if __name__ == '__main__':
 
     files_in_folder = os.listdir(path_to_answer)
     for i in files_in_folder:
-        read_in_files = []
-        
-        for j in a.values():
-            with open(os.path.join(path, f'{j}.txt'), 'r', encoding='utf-8') as f:
-                read = f.readlines()
-                try:
-                    temp = [(i.split(' | ')[1]+'.py') for i in read]
-                    read_in_files += temp
-                except:
-                    pass
-                
         with open(os.path.join(path_to_answer ,i), 'r', encoding='utf-8') as f:
             script = f.readlines()
-            
-        url = 'https://quera.org/problemset/'+i[:len(i)-3]
+        
+        code_number = i.split('.')[0]
+        languge = i.split('.')[1]
+        url = 'https://quera.org/problemset/' + code_number
         info = scrap_web(url)
             
         if script[0] != '# '+url+'\n':
-            script.insert(0, f"# {url}\n")
+            script.insert(0, f"# {url}\n\n\n")
                 
-        insert_code(info, script, path)
+        insert_code(info, script, path, languge)
             
     update_table(path)
     
