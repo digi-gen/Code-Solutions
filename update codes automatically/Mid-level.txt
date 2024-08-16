@@ -17,4 +17,4 @@
 | 17 | 177662 | [شکلات فروشی](https://quera.org/problemset/177662) | [جواب](./Quera/Mid-level/177662/) | `برنامه‌نویسی پویا` |
 | 18 | 211018 | [اطلاعات کوه‌نوردی](https://quera.org/problemset/211018) | [جواب](./Quera/Mid-level/211018/) | `حریصانه` |
 | 19 | 221455 | [تبدیل به درخت](https://quera.org/problemset/221455) | [جواب](./Quera/Mid-level/221455/) | `گراف` |
-| 20 | 228671 | [ساعت شنی](https://quera.org/problemset/228671) | [جواب](d:/programing/Git hub/Code-Solutions/Quera/Mid-level/228671/) | `برنامه‌نویسی پویا` |
+| 20 | 228671 | [ساعت شنی](https://quera.org/problemset/228671) | [جواب](./Quera/Mid-level/228671/) | `برنامه‌نویسی پویا` |

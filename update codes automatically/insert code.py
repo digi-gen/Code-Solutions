@@ -68,8 +68,10 @@ def insert_code(info, script, path, languge):
         tags += f'`{i}` '
         
     # text = 'count, id, name(link to question), score(link to answer), tags'
-    path_temp = path_temp.replace('\\', '/')
-    text = f'''-1 | {info[3]} | [{info[0]}](https://quera.org/problemset/{info[3]}) | [جواب]({path_temp}/) | {tags}|\n'''
+    
+    code_path_github = os.path.join('.', 'Quera', a[info[1]], info[3])
+    code_path_github = code_path_github.replace('\\', '/')
+    text = f'''-1 | {info[3]} | [{info[0]}](https://quera.org/problemset/{info[3]}) | [جواب]({code_path_github}/) | {tags}|\n'''
     
     update_csv(text, info[1], path)
 
