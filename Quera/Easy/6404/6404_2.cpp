@@ -1,7 +1,6 @@
 # https://quera.org/problemset/6404
 
 
-
 #include <iostream>
 #include <vector>
 #include <set>
