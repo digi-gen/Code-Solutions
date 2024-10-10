@@ -44,9 +44,7 @@
 | ردیف | شناسه عددی |                               نام سوال                                |          جواب سوال           |      تگ های سوال       |
 |:----:|:----------:|:---------------------------------------------------------------------:|:----------------------------:|:----------------------:|
 | 1 | 279 | [محاسبه‌ی پیچیده](https://quera.org/problemset/279) | [جواب](./Quera/Easy/279/) | `مبانی برنامه‌نویسی` |
-| 2 | 282 | [کامل بودن یا نبودن](https://quera.org/problemset/282) | [جواب](./Quera/Easy/282/) | `مبانی برنامه‌نویسی` |
 | 3 | 283 | [مربع توخالی](https://quera.org/problemset/283) | [جواب](./Quera/Easy/283/) | `مبانی برنامه‌نویسی` |
-| 4 | 293 | [اعداد اول](https://quera.org/problemset/293) | [جواب](./Quera/Easy/293/) | `مبانی برنامه‌نویسی` |
 | 5 | 304 | [تابع تواندار](https://quera.org/problemset/304) | [جواب](./Quera/Easy/304/) | `مبانی برنامه‌نویسی` |
 | 6 | 305 | [ب.م.م](https://quera.org/problemset/305) | [جواب](./Quera/Easy/305/) | `مبانی برنامه‌نویسی` |
 | 7 | 588 | [ماکزیمم](https://quera.org/problemset/588) | [جواب](./Quera/Easy/588/) | `مبانی برنامه‌نویسی` |
@@ -54,15 +52,12 @@
 | 9 | 591 | [چاپ مربع](https://quera.org/problemset/591) | [جواب](./Quera/Easy/591/) | `مبانی برنامه‌نویسی` |
 | 10 | 593 | [یافتن عدد اول](https://quera.org/problemset/593) | [جواب](./Quera/Easy/593/) | `مبانی برنامه‌نویسی` |
 | 11 | 595 | [مثلث خیام](https://quera.org/problemset/595) | [جواب](./Quera/Easy/595/) | `مبانی برنامه‌نویسی` |
-| 12 | 604 | [انتخابات ریاست جمهوری](https://quera.org/problemset/604) | [جواب](./Quera/Easy/604/) | `مبانی برنامه‌نویسی` |
 | 13 | 617 | [عدد خودمقلوب](https://quera.org/problemset/617) | [جواب](./Quera/Easy/617/) | `مبانی برنامه‌نویسی` |
 | 14 | 618 | [چاپ لوزی](https://quera.org/problemset/618) | [جواب](./Quera/Easy/618/) | `مبانی برنامه‌نویسی` |
-| 15 | 1365 | [ماشین متنی](https://quera.org/problemset/1365) | [جواب](./Quera/Easy/1365/) | `پیاده‌سازی` `رشته‌ها` |
 | 16 | 2529 | [اسم‌ها](https://quera.org/problemset/2529) | [جواب](./Quera/Easy/2529/) | `رشته‌ها` |
 | 17 | 2637 | [جاده کشی](https://quera.org/problemset/2637) | [جواب](./Quera/Easy/2637/) | `ترکیبیات` |
 | 18 | 2794 | [دوربین مداربسته](https://quera.org/problemset/2794) | [جواب](./Quera/Easy/2794/) | `هندسه` |
 | 19 | 2885 | [یک سوال ساده](https://quera.org/problemset/2885) | [جواب](./Quera/Easy/2885/) | `پیاده‌سازی` |
-| 20 | 3029 | [بازگشت از بوستان](https://quera.org/problemset/3029) | [جواب](./Quera/Easy/3029/) | `ریاضیات` |
 | 21 | 3407 | [بمب بازی](https://quera.org/problemset/3407) | [جواب](./Quera/Easy/3407/) | `پیاده‌سازی` |
 | 22 | 3408 | [سوال برنامه نویسی برنامه نویسی سوال](https://quera.org/problemset/3408) | [جواب](./Quera/Easy/3408/) | `پیاده‌سازی` |
 | 23 | 3409 | [جدول ضرب گنده](https://quera.org/problemset/3409) | [جواب](./Quera/Easy/3409/) | `پیاده‌سازی` |
@@ -70,7 +65,6 @@
 | 25 | 3429 | [یخدارچی](https://quera.org/problemset/3429) | [جواب](./Quera/Easy/3429/) | `پیاده‌سازی` |
 | 26 | 3537 | [سوال زرد](https://quera.org/problemset/3537) | [جواب](./Quera/Easy/3537/) | `پیاده‌سازی` |
 | 27 | 3540 | [گردو شکستم](https://quera.org/problemset/3540) | [جواب](./Quera/Easy/3540/) | `جست‌وجو` `ریاضیات` |
-| 28 | 4065 | [خر در چمن فراوونه!!](https://quera.org/problemset/4065) | [جواب](./Quera/Easy/4065/) | `ریاضیات` |
 | 29 | 6192 | [مسئله‌ی آب](https://quera.org/problemset/6192) | [جواب](./Quera/Easy/6192/) | `پیاده‌سازی` |
 | 30 | 6313 | [TAX](https://quera.org/problemset/6313) | [جواب](./Quera/Easy/6313/) | `پیاده‌سازی` |
 | 31 | 6404 | [درِ آزمایشگاه](https://quera.org/problemset/6404) | [جواب](./Quera/Easy/6404/) | `گراف` |
@@ -95,7 +89,6 @@
 | 50 | 64434 | [چاپگر](https://quera.org/problemset/64434) | [جواب](./Quera/Easy/64434/) | `پیاده‌سازی` |
 | 51 | 66859 | [آلفا قنطورس](https://quera.org/problemset/66859) | [جواب](./Quera/Easy/66859/) | `مبانی برنامه‌نویسی` |
 | 52 | 66862 | [مصائب کامبیز](https://quera.org/problemset/66862) | [جواب](./Quera/Easy/66862/) | `مبانی برنامه‌نویسی` |
-| 53 | 66864 | [کلاس کد!](https://quera.org/problemset/66864) | [جواب](./Quera/Easy/66864/) | `مبانی برنامه‌نویسی` |
 | 54 | 72880 | [معجون سوسک قرمز و اسفناج گندیده](https://quera.org/problemset/72880) | [جواب](./Quera/Easy/72880/) | `دانش‌آموزی` |
 | 55 | 72882 | [پرگوشت](https://quera.org/problemset/72882) | [جواب](./Quera/Easy/72882/) | `دانش‌آموزی` |
 | 56 | 76278 | [ام‌تایی‌ها](https://quera.org/problemset/76278) | [جواب](./Quera/Easy/76278/) | `Python` |
@@ -116,7 +109,6 @@
 | 71 | 171788 | [The Bro Code](https://quera.org/problemset/171788) | [جواب](./Quera/Easy/171788/) | `پیاده‌سازی` |
 | 72 | 171795 | [Ali the Forgetter](https://quera.org/problemset/171795) | [جواب](./Quera/Easy/171795/) | `پیاده‌سازی` |
 | 73 | 175188 | [تردستی](https://quera.org/problemset/175188) | [جواب](./Quera/Easy/175188/) | `رشته‌ها` |
-| 74 | 176774 | [جمع باستانی](https://quera.org/problemset/176774) | [جواب](./Quera/Easy/176774/) | `پیاده‌سازی` |
 | 75 | 176775 | [اعداد شبه‌باینری](https://quera.org/problemset/176775) | [جواب](./Quera/Easy/176775/) | `ریاضیات` |
 | 76 | 176776 | [خفن‌ترین هواداران](https://quera.org/problemset/176776) | [جواب](./Quera/Easy/176776/) | `داده ساختار` `رشته‌ها` |
 | 77 | 176782 | [خانه‌ی دوست](https://quera.org/problemset/176782) | [جواب](./Quera/Easy/176782/) | `ریاضیات` |
@@ -127,7 +119,6 @@
 | 82 | 179662 | [دیوارکشی](https://quera.org/problemset/179662) | [جواب](./Quera/Easy/179662/) | `نظریه اعداد` |
 | 83 | 211019 | [شش سنگ](https://quera.org/problemset/211019) | [جواب](./Quera/Easy/211019/) | `رشته‌ها` |
 | 84 | 218361 | [روبه‌رو در مترو](https://quera.org/problemset/218361) | [جواب](./Quera/Easy/218361/) | `پیاده‌سازی` |
-| 85 | 220668 | [کافی‌نت رفقا](https://quera.org/problemset/220668) | [جواب](./Quera/Easy/220668/) | `پیاده‌سازی` |
 | 86 | 220669 | [لوگو دلتا](https://quera.org/problemset/220669) | [جواب](./Quera/Easy/220669/) | `پیاده‌سازی` `رشته‌ها` |
 | 87 | 221452 | [جمع دو عدد](https://quera.org/problemset/221452) | [جواب](./Quera/Easy/221452/) | `ریاضیات` |
 | 88 | 221462 | [نقطه‌ی گم‌شده](https://quera.org/problemset/221462) | [جواب](./Quera/Easy/221462/) | `پیاده‌سازی` `ریاضیات` |
@@ -135,7 +126,6 @@
 | 90 | 226378 | [خمیدگی مار](https://quera.org/problemset/226378) | [جواب](./Quera/Easy/226378/) | `پیاده‌سازی` |
 | 91 | 228669 | [شهرهای مرزی](https://quera.org/problemset/228669) | [جواب](./Quera/Easy/228669/) | `ریاضیات` |
 | 92 | 244100 | [از دات‌نت به گولنگ](https://quera.org/problemset/244100) | [جواب](./Quera/Easy/244100/) | `رشته‌ها` |
-| 93 | 244102 | [دزد و پلیس در فانو](https://quera.org/problemset/244102) | [جواب](./Quera/Easy/244102/) | `ترکیبیات` `گراف` |
 
 [بازگشت به ابتدا :back:](#حل-سوالات-Quera)
 ***
