@@ -134,27 +134,26 @@
 
 | ردیف | شناسه عددی |                      نام سوال                       |             جواب سوال              |       تگ های سوال       |
 |:----:|:----------:|:---------------------------------------------------:|:----------------------------------:|:-----------------------:|
-| 1 | 280 | [اعداد فیثاغورثی](https://quera.org/problemset/280) | [جواب](./Quera/Mid-level/280/) | `مبانی برنامه‌نویسی` |
-| 2 | 308 | [جناس قلب](https://quera.org/problemset/308) | [جواب](./Quera/Mid-level/308/) | `مبانی برنامه‌نویسی` |
-| 3 | 594 | [مبنا](https://quera.org/problemset/594) | [جواب](./Quera/Mid-level/594/) | `مبانی برنامه‌نویسی` |
-| 4 | 607 | [ضرب ماتریس‌ها](https://quera.org/problemset/607) | [جواب](./Quera/Mid-level/607/) | `مبانی برنامه‌نویسی` |
-| 5 | 616 | [توان دو](https://quera.org/problemset/616) | [جواب](./Quera/Mid-level/616/) | `مبانی برنامه‌نویسی` |
-| 6 | 655 | [فرزاد فیلم‌بین](https://quera.org/problemset/655) | [جواب](./Quera/Mid-level/655/) | `مبانی برنامه‌نویسی` |
-| 7 | 3405 | [چاپ برعکس](https://quera.org/problemset/3405) | [جواب](./Quera/Mid-level/3405/) | `پیاده‌سازی` |
-| 8 | 3539 | [تک‌رقمی](https://quera.org/problemset/3539) | [جواب](./Quera/Mid-level/3539/) | `ریاضیات` |
-| 9 | 6374 | [مبنای شونزده](https://quera.org/problemset/6374) | [جواب](./Quera/Mid-level/6374/) | `پیاده‌سازی` |
-| 10 | 10230 | [مشق امشب باقر](https://quera.org/problemset/10230) | [جواب](./Quera/Mid-level/10230/) | `ریاضیات` `هندسه` |
-| 11 | 10636 | [کارمند زیادی](https://quera.org/problemset/10636) | [جواب](./Quera/Mid-level/10636/) | `داده ساختار` `رشته‌ها` |
-| 12 | 17675 | [رشته فیبوناچی](https://quera.org/problemset/17675) | [جواب](./Quera/Mid-level/17675/) | `ریاضیات` |
-| 13 | 35254 | [پاکسازی](https://quera.org/problemset/35254) | [جواب](./Quera/Mid-level/35254/) | `رشته‌ها` `ریاضیات` |
-| 14 | 52543 | [بازی](https://quera.org/problemset/52543) | [جواب](./Quera/Mid-level/52543/) | `پیاده‌سازی` |
-| 15 | 60134 | [شطرنج میوه‌ای](https://quera.org/problemset/60134) | [جواب](./Quera/Mid-level/60134/) | `Python` |
-| 16 | 87176 | [بازی تفاضل](https://quera.org/problemset/87176) | [جواب](./Quera/Mid-level/87176/) | `Python` |
-| 17 | 175884 | [بالین!](https://quera.org/problemset/175884) | [جواب](./Quera/Mid-level/175884/) | `Python` |
-| 18 | 177662 | [شکلات فروشی](https://quera.org/problemset/177662) | [جواب](./Quera/Mid-level/177662/) | `برنامه‌نویسی پویا` |
-| 19 | 211018 | [اطلاعات کوه‌نوردی](https://quera.org/problemset/211018) | [جواب](./Quera/Mid-level/211018/) | `حریصانه` |
-| 20 | 221455 | [تبدیل به درخت](https://quera.org/problemset/221455) | [جواب](./Quera/Mid-level/221455/) | `گراف` |
-| 21 | 228671 | [ساعت شنی](https://quera.org/problemset/228671) | [جواب](./Quera/Mid-level/228671/) | `برنامه‌نویسی پویا` |
+|  1   | 280 | [اعداد فیثاغورثی](https://quera.org/problemset/280) | [جواب](./Quera/Mid-level/280/) | `مبانی برنامه‌نویسی` |
+|  2   | 308 | [جناس قلب](https://quera.org/problemset/308) | [جواب](./Quera/Mid-level/308/) | `مبانی برنامه‌نویسی` |
+|  3   | 594 | [مبنا](https://quera.org/problemset/594) | [جواب](./Quera/Mid-level/594/) | `مبانی برنامه‌نویسی` |
+|  4   | 607 | [ضرب ماتریس‌ها](https://quera.org/problemset/607) | [جواب](./Quera/Mid-level/607/) | `مبانی برنامه‌نویسی` |
+|  5   | 616 | [توان دو](https://quera.org/problemset/616) | [جواب](./Quera/Mid-level/616/) | `مبانی برنامه‌نویسی` |
+|  6   | 655 | [فرزاد فیلم‌بین](https://quera.org/problemset/655) | [جواب](./Quera/Mid-level/655/) | `مبانی برنامه‌نویسی` |
+|  7   | 3405 | [چاپ برعکس](https://quera.org/problemset/3405) | [جواب](./Quera/Mid-level/3405/) | `پیاده‌سازی` |
+|  8   | 3539 | [تک‌رقمی](https://quera.org/problemset/3539) | [جواب](./Quera/Mid-level/3539/) | `ریاضیات` |
+|  9   | 6374 | [مبنای شونزده](https://quera.org/problemset/6374) | [جواب](./Quera/Mid-level/6374/) | `پیاده‌سازی` |
+|  10  | 10230 | [مشق امشب باقر](https://quera.org/problemset/10230) | [جواب](./Quera/Mid-level/10230/) | `ریاضیات` `هندسه` |
+|  11  | 10636 | [کارمند زیادی](https://quera.org/problemset/10636) | [جواب](./Quera/Mid-level/10636/) | `داده ساختار` `رشته‌ها` |
+|  12  | 17675 | [رشته فیبوناچی](https://quera.org/problemset/17675) | [جواب](./Quera/Mid-level/17675/) | `ریاضیات` |
+|  13  | 35254 | [پاکسازی](https://quera.org/problemset/35254) | [جواب](./Quera/Mid-level/35254/) | `رشته‌ها` `ریاضیات` |
+|  14  | 52543 | [بازی](https://quera.org/problemset/52543) | [جواب](./Quera/Mid-level/52543/) | `پیاده‌سازی` |
+|  15  | 60134 | [شطرنج میوه‌ای](https://quera.org/problemset/60134) | [جواب](./Quera/Mid-level/60134/) | `Python` |
+|  16  | 87176 | [بازی تفاضل](https://quera.org/problemset/87176) | [جواب](./Quera/Mid-level/87176/) | `Python` |
+|  17  | 175884 | [بالین!](https://quera.org/problemset/175884) | [جواب](./Quera/Mid-level/175884/) | `Python` |
+|  18  | 177662 | [شکلات فروشی](https://quera.org/problemset/177662) | [جواب](./Quera/Mid-level/177662/) | `برنامه‌نویسی پویا` |
+|  19  | 221455 | [تبدیل به درخت](https://quera.org/problemset/221455) | [جواب](./Quera/Mid-level/221455/) | `گراف` |
+|  20  | 228671 | [ساعت شنی](https://quera.org/problemset/228671) | [جواب](./Quera/Mid-level/228671/) | `برنامه‌نویسی پویا` |
 
 [بازگشت به ابتدا :back:](#حل-سوالات-Quera)
 ***
