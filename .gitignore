@@ -908,3 +908,6 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/c,c++,python,pycharm,kotlin,androidstudio,visualstudiocode,visualstudio
+
+#pooya's pattern for directories of  not solved questions
+week*

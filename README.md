@@ -174,13 +174,14 @@
 | 18 | 17675 | [رشته فیبوناچی](https://quera.org/problemset/17675) | [جواب](./Quera/Mid-level/17675/) | `ریاضیات` |
 | 19 | 35254 | [پاکسازی](https://quera.org/problemset/35254) | [جواب](./Quera/Mid-level/35254/) | `رشته‌ها` `ریاضیات` |
 | 20 | 52543 | [بازی](https://quera.org/problemset/52543) | [جواب](./Quera/Mid-level/52543/) | `پیاده‌سازی` |
-| 21 | 60134 | [شطرنج میوه‌ای](https://quera.org/problemset/60134) | [جواب](./Quera/Mid-level/60134/) | `Python` |
-| 22 | 87176 | [بازی تفاضل](https://quera.org/problemset/87176) | [جواب](./Quera/Mid-level/87176/) | `Python` |
-| 23 | 175884 | [بالین!](https://quera.org/problemset/175884) | [جواب](./Quera/Mid-level/175884/) | `Python` |
-| 24 | 177662 | [شکلات فروشی](https://quera.org/problemset/177662) | [جواب](./Quera/Mid-level/177662/) | `برنامه‌نویسی پویا` |
-| 25 | 211018 | [اطلاعات کوه‌نوردی](https://quera.org/problemset/211018) | [جواب](./Quera/Mid-level/211018/) | `حریصانه` |
-| 26 | 221455 | [تبدیل به درخت](https://quera.org/problemset/221455) | [جواب](./Quera/Mid-level/221455/) | `گراف` |
-| 27 | 228671 | [ساعت شنی](https://quera.org/problemset/228671) | [جواب](./Quera/Mid-level/228671/) | `برنامه‌نویسی پویا` |
+| 21 | 52550 | [جوراب‌ها](https://quera.org/problemset/52550) | [جواب](./Quera/Mid-level/52550/) | `پیاده‌سازی` |
+| 22 | 60134 | [شطرنج میوه‌ای](https://quera.org/problemset/60134) | [جواب](./Quera/Mid-level/60134/) | `Python` |
+| 23 | 87176 | [بازی تفاضل](https://quera.org/problemset/87176) | [جواب](./Quera/Mid-level/87176/) | `Python` |
+| 24 | 175884 | [بالین!](https://quera.org/problemset/175884) | [جواب](./Quera/Mid-level/175884/) | `Python` |
+| 25 | 177662 | [شکلات فروشی](https://quera.org/problemset/177662) | [جواب](./Quera/Mid-level/177662/) | `برنامه‌نویسی پویا` |
+| 26 | 211018 | [اطلاعات کوه‌نوردی](https://quera.org/problemset/211018) | [جواب](./Quera/Mid-level/211018/) | `حریصانه` |
+| 27 | 221455 | [تبدیل به درخت](https://quera.org/problemset/221455) | [جواب](./Quera/Mid-level/221455/) | `گراف` |
+| 28 | 228671 | [ساعت شنی](https://quera.org/problemset/228671) | [جواب](./Quera/Mid-level/228671/) | `برنامه‌نویسی پویا` |
 
 [بازگشت به ابتدا :back:](#حل-سوالات-Quera)
 ***
